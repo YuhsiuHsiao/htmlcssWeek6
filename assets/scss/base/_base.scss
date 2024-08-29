@@ -1,0 +1,59 @@
+// 以手機版優先考量為變數基礎
+a {
+  color: inherit;
+  display: inline-block;
+}
+h1, h2, h3, h4, h5, h6, button, li, .badge {
+  letter-spacing: 0.1em;
+}
+p {
+  letter-spacing: 0.05em;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul li{
+  list-style: none;
+}
+h1, h2 {
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+h3, h4 {
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.more-btn {
+  color: $accent-200;
+  font-weight: $font-weight-bold;
+  font-family: "Newsreader", serif;
+  letter-spacing: 0.1rem;
+}
+
+.badge {
+  line-height: 19.2px;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.bg-dark-linear {
+  background-image: linear-gradient( rgba(33, 37, 41, .05), rgba(33, 37, 41, 1)  );
+}
+
+.py-sm {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.text-Newsreader {
+  font-family: 'Newsreader', serif;
+}

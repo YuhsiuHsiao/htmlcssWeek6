@@ -1,0 +1,31 @@
+.form-control {
+  display: block;
+  appearance: none; //用來移除瀏覽器表單元素（如按鈕、輸入框、下拉選單等）提供的預設樣式，使這些元素看起來更像普通的 HTML 元素。
+  border: 1px solid $gray-200;
+}
+.form-control:focus {
+  color: $accent-100;
+  border: 1px solid $accent-200;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem #56957340;
+}
+header {
+  .nav-link {
+    padding: 8px 20px;
+  }
+  background-color: rgba(255, 253, 245, .9);
+  backdrop-filter:blur(3px);
+}
+button:focus {
+  outline: 0;
+}
+.navbar-collapse.navbar-collapse {
+  transition: height 0.1s;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .navbar-collapse.navbar-collapse {
+      height: 100vh;
+      overflow-y: hidden;
+  }
+}

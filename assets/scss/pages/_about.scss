@@ -1,0 +1,35 @@
+.banner {
+  height: 454px;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    height: 240px;
+  }
+}
+.worth li {
+  list-style: disc;
+}
+
+.year { 
+  font-family: 'Newsreader', serif;
+  font-weight: bold;
+  color: $gray-100;
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+.month {
+  width: 10%;
+  color: $gray-600;
+  font-family: 'Newsreader', serif;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    width: 12%;
+  }
+}
+.content-text{
+  width: 90%;
+  color: $dark;
+  @media (max-width: 768px) {
+    width: 88%;
+  }
+}

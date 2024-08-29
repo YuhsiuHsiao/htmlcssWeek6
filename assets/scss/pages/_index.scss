@@ -1,0 +1,136 @@
+.index-title {
+  font-size: 100px;
+}
+.hot {
+  .theme-card {
+    border: 0;
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #212529, $alpha: .4);
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+
+  }
+  .card-img {
+    border-radius: 0px;
+    object-fit: cover;
+  }
+  @media ( max-width: 768px ) {
+    .theme-card {
+      height: 86px;
+    }
+  }
+}
+
+.hito{
+  &::before {
+    content: '';
+    width: 217px;
+    height: 76px;
+    background: url('../images/bg-1.png');
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  &::after {
+    content: '';
+    width: 300px;
+    height: 196px;
+    background: url('../images/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    right: 0px;
+    position: absolute;
+    @media (max-width: 576px) {
+      background: url('../images/bg-2-sm.png');
+      width: 115px;
+      height: 96px;
+    }
+  }
+}
+
+.btn {
+  font-size: 20px;
+  @media (max-width: 576px) {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+.list-group, .list-group-content {
+  border-radius: 12px;
+}
+.list-group-item{
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 24px;
+  letter-spacing: 0.1em;
+  &.active {
+    background-color: #e0efde;
+    color: rgba(33, 37, 41, 1);
+  }
+}
+
+.popular {
+  .tab-pane .img {
+    gap: 4px;
+  }
+  .tab-pane .img li:first-child img {
+    border-radius: 20px 0 0 20px;
+  }
+  .tab-pane .img li:last-child img {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .tab-content {
+    background-color: white;
+    @media (max-width: 992px) {
+        background-color: transparent;
+    }
+  }
+}
+
+.life {
+  .theme-tt {
+    font-size: 52px;
+    color: $primary-400;
+    @media (max-width: 768px) {
+      font-size: 40px;
+      font-weight: bold;      
+    }
+  }
+  ul {
+    gap: 20px;
+  }
+  li {
+    font-weight: bolder;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      font-weight: bold;      
+    }
+  }
+  .more-btn {
+    font-size: 20px;
+    @media (max-width:768px) {
+      font-size: $font-size-base;      
+    }
+  }
+}
